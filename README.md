@@ -1,6 +1,7 @@
 #### What
 - Uses yt-dlp==2023.3.4 (install with pip)
 - And ffmpeg (apt install)
+- you can run it locally, but I suggest docker
 
 #### How to
 1. Build the image
