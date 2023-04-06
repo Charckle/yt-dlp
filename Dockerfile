@@ -4,6 +4,6 @@ RUN mkdir -p /m_files
 
 RUN apk add --no-cache \
     ffmpeg
-RUN pip install yt-dlp==2023.3.4
+RUN pip install yt-dlp
 
 
