@@ -19,7 +19,7 @@ echo "version: $version"
 . build.sh
 
 # now make tags and push it to git
-cat "Adding tags to git and pushing"
+echo "Adding tags to git and pushing"
 git add .
 git commit -m "version $version"
 git push
