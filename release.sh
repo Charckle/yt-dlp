@@ -9,12 +9,12 @@ USERNAME=charckle
 IMAGE=yt-dlp
 
 echo "pulling latest image from git"
-#git pull
+git pull
 
 # bump version
 OLD_VERSION=$(cat VERSION)
 echo "Bumping version from $OLD_VERSION"
-#docker run --rm -v "$PWD":/app treeder/bump patch
+docker run --rm -v "$PWD":/app treeder/bump patch
 version=$(cat VERSION)
 echo "version: $version"
 
