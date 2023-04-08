@@ -1,0 +1,4 @@
+.env
+.venv
+m_files/*
+!_files/.ignore.git
