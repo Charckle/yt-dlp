@@ -1,10 +1,10 @@
 #### What
-- Uses yt-dlp==2023.3.4 (install with pip)
+- Uses yt-dlp (install with pip)
 - And ffmpeg (apt install)
 - you can run it locally, but I suggest docker
+- Downloads mp3, but if an additional argument is added to the script, downloads the best video+audio+subtitles
+    - `./ytmp3.sh "https://URL"` # udio
+    - `./ytmp3.sh "https://URL" v` # video
 
-#### How to
-1. Build the image
-2. Run the script, make sure to edit the image name (or else it will just download the correct one)
-3. ????
-4. Don't download copywrited music.
+#### Docker
+Run release.sh. It will download the latest verion from git, bump up the verion of the image, check for the latest version of yt-dlp, create a new docke image and git commit with the version number
