@@ -3,7 +3,7 @@
 - And ffmpeg (apt install)
 - you can run it locally, but I suggest docker
 - Downloads mp3, but if an additional argument is added to the script, downloads the best video+audio+subtitles
-    - `./ytmp3.sh "https://URL"` # udio
+    - `./ytmp3.sh "https://URL"` # audio
     - `./ytmp3.sh "https://URL" v` # video
 
 #### Docker
