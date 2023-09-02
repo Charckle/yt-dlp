@@ -14,13 +14,13 @@ echo "pulling latest image from git"
 # bump version
 OLD_VERSION=$(cat VERSION)
 echo "Bumping version from $OLD_VERSION"
-#docker run --rm -v "$PWD":/app treeder/bump patch
+docker run --rm -v "$PWD":/app treeder/bump patch
 version=$(cat VERSION)
 echo "version: $version"
 
 # now run build
 # build will create the latest image, and the version image, and push both to docker
-#. build.sh
+. build.sh
 
 # now make tags and push it to git
 echo "Adding tags to git and pushing"
