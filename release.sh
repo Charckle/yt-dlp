@@ -9,7 +9,7 @@ USERNAME=charckle
 IMAGE=yt-dlp
 
 echo "pulling latest image from git"
-#git pull
+git pull
 
 # bump version
 OLD_VERSION=$(cat VERSION)
