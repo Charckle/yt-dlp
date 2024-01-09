@@ -8,4 +8,4 @@ RUN apk add --no-cache \
     ffmpeg
 RUN pip install yt-dlp==$yt_version
 
-
+ENTRYPOINT yt-dlp
